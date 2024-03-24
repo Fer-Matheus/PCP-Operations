@@ -82,6 +82,8 @@ void CreateLDevID() {
 	Error(NCryptSetProperty(keyHandle, NCRYPT_KEY_USAGE_PROPERTY, (PBYTE)&keyUsage, sizeof(keyUsage), 0), "Setproperty");
 
 	Error(NCryptFinalizeKey(keyHandle, 0), "Finalize key");
+
+	LOG("Key LDEVID created!");
 }
 
 int main() {
