@@ -128,6 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="PCPTest.cpp" />
+    <ClCompile Include="src\Attestation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Attestation.h" />
+    <ClInclude Include="include\InlineFn.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
